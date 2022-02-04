@@ -16,4 +16,6 @@ WORKDIR /app
 ADD app .
 RUN chmod +x run.sh
 
+VOLUME ["/usr/local/log/", "/var/run/php"]
+
 CMD ["./run.sh"]
